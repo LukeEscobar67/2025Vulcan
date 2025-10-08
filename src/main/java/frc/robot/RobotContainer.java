@@ -30,7 +30,8 @@ import frc.robot.subsystems.IntakePivot;
 import frc.robot.subsystems.Limelight;
 import frc.robot.subsystems.Shooter;
 import frc.robot.subsystems.Swerve;
-
+//* luke- importinh stuff for the thing to do the thing becuase the thing needs imports to know
+//  wahts is happenin*
 /**
  * This class is where the bulk of the robot should be declared. Since
  * Command-based is a
@@ -74,7 +75,7 @@ public class RobotContainer {
         private final JoystickButton forceIntake = new JoystickButton(driver, XboxController.Button.kY.value);
         // private final JoystickButton amp = new JoystickButton(driver, XboxController.Button.kLeftBumper.value);
         // private final JoystickButton limeDrive = new JoystickButton(driver, XboxController.Button.kRightBumper.value);
-
+// controller exits and its better than ever 
         private final double speedcontrol = 0.7;
 
         public boolean gyroCheck;
@@ -129,7 +130,7 @@ public class RobotContainer {
                 configureButtonBindings();
 
         }
-
+//Getting commands from controller and converting it to what the robot does + next section
         /**
          * Use this method to define your button->command mappings. Buttons can be
          * created by
@@ -204,3 +205,5 @@ public class RobotContainer {
                 return null;
         }
 }
+
+// dis is the end

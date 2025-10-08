@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Arm;
 import frc.robot.subsystems.Climber;
 import frc.robot.subsystems.IntakePivot;
-
+// importing the dohickys and thingamabobs
 public class AmpArm extends Command {
   private double intakeAngleSup;
   private double armAngleSup;
@@ -22,6 +22,7 @@ public class AmpArm extends Command {
   /** Creates a new TeleopArm. */
   public AmpArm(Arm arm, IntakePivot intake, Climber climb, double intakeAngleSup, double armAngleSup, double climbPosSup, BooleanSupplier ampBoolSup) {
     // Use addRequirements() here to declare subsystem dependencies.
+    //settign commands
     addRequirements(arm, intake);
     this.arm = arm;
     this.intake = intake;
@@ -50,6 +51,7 @@ public class AmpArm extends Command {
       intake.setAngle(-intakeAngleVal, -armAngleVal);
     }
   }
+  
 
   // Called once the command ends or is interrupted.
   @Override
